@@ -1,5 +1,6 @@
 var express = require("express");
 var router = express.Router();
+
 router.get("/", function (req, res, next) {
  var randNumArr = Math.random() * 2;
  var rndNumArr = Math.round(randNumArr);
