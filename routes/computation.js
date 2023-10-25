@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 /* GET computation page. */
 router.get('/', function(req, res, next) {
-    let x = Math.floor(Math.random() * 100);
+    let x = Math.trunc(Math.random() * 100);
     x=x.toFixed(2)
     if (req.query.x != undefined) {
         x = parseFloat(req.query.x);
